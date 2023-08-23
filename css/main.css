@@ -1,0 +1,203 @@
+@font-face {
+    font-family: HelveticaNeueLTProLt;
+    src: url(../fonts/HelveticaNeueLTProLt.otf) format("opentype");
+}
+@font-face {
+    font-family: HelveticaNeueLTProMd;
+    src: url(../fonts/HelveticaNeueLTProMd.otf) format("opentype");
+}
+@font-face {
+    font-family: HelveticaNeueLTProRoman;
+    src: url(../fonts/HelveticaNeueLTProRoman.otf) format("opentype");
+}
+@font-face {
+    font-family: Merriweather-LightItalic;
+    src: url(../fonts/Merriweather-LightItalic.ttf) format("truetype");
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.ttf) format("truetype");
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+/* 
+font-family: HelveticaNeueLTProLt, sans-serif; 
+font-family: HelveticaNeueLTProMd, sans-serif;
+font-family: HelveticaNeueLTProRoman, sans-serif;
+font-family: Merriweather-LightItalic, sans-serif;
+font-family: Montserrat-Light, sans-serif;
+font-family: Montserrat-Regular, sans-serif;
+font-family: Roboto-Regular, sans-serif;
+*/
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+}
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 207px;
+}
+.menu li {
+    margin-right: 43px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.menu__item a {
+    text-decoration: none;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #989696;    
+}
+.active a {
+    color: #010101;
+}
+.header__content {
+    text-align: center;
+    margin-bottom: 206px;
+}
+.header__title {
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+}
+.header__text {
+    font-family: Merriweather-LightItalic, serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    color: #898888;
+    margin-bottom: 39px;
+}
+.header__button {
+    text-decoration: none;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 57px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 20px 52px;
+}
+.about {
+    height: 1129px;
+    padding-top: 128px;
+    background: url(../img/buildings__white.png) center bottom repeat-x,
+                url(../img/buildings__black.png) center 98% repeat-x,
+                #1d1d1d;
+}
+.about__inner {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content max-content;
+    grid-gap: 178px;
+    justify-content: center;
+}
+.about__item {
+    width: 417px;
+    height: 276px;
+    background-color: #181818;
+    
+    padding: 60px 10px ;
+    
+}
+.about__year {
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    text-align: center;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    margin-bottom: 27px;
+}
+.about__text {
+    font-family: Montserrat-Light, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #b7b7b7;
+}
+.team {
+    padding-top: 138px;
+}
+.section__head {
+    text-align: center;
+    margin-bottom: 131px;
+}
+.section__title {
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    margin-bottom: 4px;
+}
+.section__text {
+    font-family: Merriweather-LightItalic, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #898888;
+}
+.team__inner {
+    display: flex;
+    justify-content: space-around;
+}
+.team__item {
+    text-align: center;
+}
+.team__img {
+    margin: 0 auto;
+}
+.team__name {
+    font-family: HelveticaNeueLTProRoman, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #464646;
+}
+.team__position {
+    font-family: HelveticaNeueLTProRoman, sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #b3b3b3;
+}
+.team__contact {
+}
+.contact__twitter {
+}
+.contact__instagram {
+}
