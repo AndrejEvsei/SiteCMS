@@ -177,7 +177,7 @@ font-family: Roboto-Regular, sans-serif;
     text-align: center;
 }
 .team__img {
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 .team__name {
     font-family: HelveticaNeueLTProRoman, sans-serif;
@@ -186,6 +186,7 @@ font-family: Roboto-Regular, sans-serif;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #464646;
+    margin-bottom: 4px;
 }
 .team__position {
     font-family: HelveticaNeueLTProRoman, sans-serif;
@@ -194,10 +195,14 @@ font-family: Roboto-Regular, sans-serif;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #b3b3b3;
+    margin-bottom: 21px;
 }
 .team__contact {
+    display: flex;
+    justify-content: center;
 }
 .contact__twitter {
+    margin-right: 14px;
 }
 .contact__instagram {
 }
