@@ -42,9 +42,6 @@ font-family: Roboto-Regular, sans-serif;
     margin: 0 auto;
     padding: 0 15px;
 }
-
-.header {
-}
 .menu {
     list-style: none;
     display: flex;
@@ -172,6 +169,7 @@ font-family: Roboto-Regular, sans-serif;
 .team__inner {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 146px;
 }
 .team__item {
     text-align: center;
@@ -204,5 +202,44 @@ font-family: Roboto-Regular, sans-serif;
 .contact__twitter {
     margin-right: 14px;
 }
-.contact__instagram {
+.provide {
+    background-color: #181818;
+    padding-top: 176px;
+    padding-bottom: 155px;
+}
+.section__title-inverse {
+    color: #fff;
+}
+.section__text-inverse {
+    color: #777777;
+}
+.provide__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.provide__item {
+    text-align: center;
+    justify-content: space-between
+}
+.provide__item img {
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.provede__title {
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 31px;
+}
+.provide__text {
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #383838;
+    max-width: 335px;
 }
