@@ -103,8 +103,8 @@ font-family: Roboto-Regular, sans-serif;
 .about {
     height: 1129px;
     padding-top: 128px;
-    background: url(../img/buildings__white.png) center bottom repeat-x,
-                url(../img/buildings__black.png) center 98% repeat-x,
+    background: url(../img/buildings__white.png) center 101% repeat-x,
+                url(../img/buildings__black.png) center 99% repeat-x,
                 #1d1d1d;
 }
 .about__inner {
@@ -199,7 +199,7 @@ font-family: Roboto-Regular, sans-serif;
     display: flex;
     justify-content: center;
 }
-.contact__twitter {
+.contact-team__twitter {
     margin-right: 14px;
 }
 .provide {
@@ -242,4 +242,100 @@ font-family: Roboto-Regular, sans-serif;
     letter-spacing: 0.02em;
     color: #383838;
     max-width: 335px;
+}
+.contact {
+    padding-top: 95px;
+}
+.section__head {
+    margin-bottom: 65px;
+}
+.contact__inner {
+    max-width: 540px;
+    margin: 0 auto 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.contact__item {
+    max-width: 128px;
+    text-align: center;
+}
+.contact__icon {
+    margin: 0 auto;
+}
+.contact__link {
+    text-decoration: none;
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    transition: 0.3s;
+}
+.contact__link:hover {
+    color: #6b6868;
+    text-decoration: underline;
+}
+
+/* Форма */
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
+    margin: 0 auto;
+    font-family: HelveticaNeueLTProLt, sans-serif; 
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.contact__form input {
+    text-align: center;
+    border: 1px solid #999999;
+}
+.form-contact__name {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.form-contact__email {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.form-contact__number {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-contact__text {
+    height: 195px;
+    resize: none;
+    line-height: 26px;
+    padding: 22px;
+    margin-bottom: 20px;
+    border: 1px solid #999999;
+}
+.form-contact__button {
+    font-family: HelveticaNeueLTProMd, sans-serif;
+    font-size: 17px;
+    line-height: 52px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    background-color: #161616;
+    margin-bottom: 154px;
+}
+.footer__text {
+    font-family: HelveticaNeueLTProRoman, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3b3b3b;
+    text-align: center;
+    margin-bottom: 29px;
 }
