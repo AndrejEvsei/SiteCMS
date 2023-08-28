@@ -42,6 +42,9 @@ font-family: Roboto-Regular, sans-serif;
     margin: 0 auto;
     padding: 0 15px;
 }
+.menu__mobile {
+    display: none;
+}
 .menu {
     list-style: none;
     display: flex;
@@ -101,10 +104,11 @@ font-family: Roboto-Regular, sans-serif;
     padding: 20px 52px;
 }
 .about {
-    height: 1129px;
+    /* height: 1129px; */
     padding-top: 128px;
-    background: url(../img/buildings__white.png) center 101% repeat-x,
-                url(../img/buildings__black.png) center 99% repeat-x,
+    padding-bottom: 270px;
+    background: url(../img/buildings__white.png) center 100% repeat-x,
+                url(../img/buildings__black.png) center 98% repeat-x,
                 #1d1d1d;
 }
 .about__inner {
@@ -119,7 +123,6 @@ font-family: Roboto-Regular, sans-serif;
     width: 417px;
     height: 276px;
     background-color: #181818;
-    
     padding: 60px 10px ;
     
 }
@@ -142,7 +145,8 @@ font-family: Roboto-Regular, sans-serif;
     color: #b7b7b7;
 }
 .team {
-    padding-top: 138px;
+    padding-top: 139px;
+    padding-bottom: 146px;
 }
 .section__head {
     text-align: center;
@@ -169,7 +173,6 @@ font-family: Roboto-Regular, sans-serif;
 .team__inner {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 146px;
 }
 .team__item {
     text-align: center;
@@ -245,6 +248,7 @@ font-family: Roboto-Regular, sans-serif;
 }
 .contact {
     padding-top: 95px;
+    padding-bottom: 154px;
 }
 .section__head {
     margin-bottom: 65px;
@@ -257,7 +261,7 @@ font-family: Roboto-Regular, sans-serif;
     justify-content: space-between;
 }
 .contact__item {
-    max-width: 128px;
+    width: 128px;
     text-align: center;
 }
 .contact__icon {
@@ -328,7 +332,6 @@ input::-webkit-inner-spin-button {
     letter-spacing: 0.02em;
     color: #fefefe;
     background-color: #161616;
-    margin-bottom: 154px;
 }
 .footer__text {
     font-family: HelveticaNeueLTProRoman, sans-serif;
@@ -338,4 +341,115 @@ input::-webkit-inner-spin-button {
     color: #3b3b3b;
     text-align: center;
     margin-bottom: 29px;
+}
+
+/* Media */
+
+@media  screen and (max-width: 821px) {
+    .container {
+        width: 820px;
+    }
+    .about {
+        padding-top: 128px;
+        padding-bottom: 180px;
+    }
+    .about__inner {
+        grid-template-columns: max-content;
+        grid-gap: 30px;
+    }
+    .team, .provide{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .provide__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .provide__item {
+        max-width: 300px;
+        padding: 0 30px 40px;
+    }
+    .contact__inner {
+        margin-bottom: 90px;
+    }.contact {
+        padding-bottom: 30px;
+    }
+}
+
+@media  screen and (max-width: 769px) {
+    .container {
+        width: 768px;
+    }
+}    
+
+@media  screen and (max-width: 415px) {
+    .container {
+        width: 414px;
+    }
+    .menu__desktop {
+        display: none;
+    }
+    .menu__mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        display: none;
+    }
+    .menu__burger {
+        width: 30px;
+        height: 3px;
+        background-color: #181818;
+        position: relative;
+    }
+    .menu__burger:after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: #181818;
+        position: absolute;
+        bottom: -10px;
+    }
+    .menu__burger::before {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: #181818;
+        position: absolute;
+        top: -10px;
+    }
+    .header__title {
+        padding-top: 80px;
+        margin-bottom: 30px;
+    }
+    .header__content {
+        margin-bottom: 100px;
+    }
+    .about__item {
+        max-width: 350px;
+    }
+    .team__inner {
+        flex-wrap: wrap;
+    }
+    .team__item {
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    .team__item:last-child {
+        margin-bottom: 0;
+    }
+    .contact__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact__item:last-child {
+        padding-top: 40px;
+    }
+}
+
+@media  screen and (max-width: 376px) {
+    .container {
+        width: 375px;
+    }
 }
