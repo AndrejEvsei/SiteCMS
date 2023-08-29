@@ -391,33 +391,69 @@ input::-webkit-inner-spin-button {
     }
     .menu__mobile {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
     }
     .menu {
         display: none;
+        text-align: center;
+        margin-bottom: 0;
     }
+    li.menu__item{
+        margin: 0;
+        padding: 10px 0;
+    }
+    .menu__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
     .menu__burger {
-        width: 30px;
-        height: 3px;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
         background-color: #181818;
         position: relative;
     }
-    .menu__burger:after {
-        content: '';
-        width: 30px;
-        height: 3px;
-        background-color: #181818;
+    .menu__burger span {
+        display: block;
         position: absolute;
+        background-color: #fff;
+        width: 30px;
+        height: 4px;
+        left: 5px;
+        top: 18px;
+        font-size: 0;
+        transition: background 0s 0.3s;
+    }
+    .menu__burger span:after,
+    .menu__burger span:before {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 4px;
+        transition-duration: 0.3s, 0s;
+        transition-delay: 0.3s, 0s;
+    }
+    .menu__burger span:after {
+        top: -10px;
+    }
+    .menu__burger span:before {
         bottom: -10px;
     }
-    .menu__burger::before {
-        content: '';
-        width: 30px;
-        height: 3px;
-        background-color: #181818;
-        position: absolute;
-        top: -10px;
+    .menu__burger.close span {
+        background: none;
+    }
+    .menu__burger.close span:after {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+    .menu__burger.close span:before {
+        bottom: 0px;
+        transform: rotate(-45deg);
     }
     .header__title {
         padding-top: 80px;
